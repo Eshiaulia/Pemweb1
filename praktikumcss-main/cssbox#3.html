@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box and Positioning</title>
+    <style>
+        /* Styling untuk kontainer utama */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            border: 2px solid #ccc;
+        }
+        /* Bagian atas (header) */
+        .header {
+            background-color: #8fd19e;
+            height: 80px;
+            text-align: center;
+            color: white;
+            padding: 10px;
+        }
+        /* Bagian kiri */
+        .left {
+            background-color: #f3db4d;
+            width: 20%;
+            height: 300px;
+            float: left;
+        }
+        /* Bagian kanan */
+        .right {
+            background-color: #61d0ff;
+            width: 20%;
+            height: 300px;
+            float: right;
+        }
+        /* Bagian tengah */
+        .center {
+            background-color: #ed5a50;
+            width: 55%;
+            height: 300px;
+            margin: 0 auto;
+            float: left;
+        }
+        /* Menghapus float setelah .left, .right, dan .center */
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="clearfix">
+            <div class="left"></div>
+            <div class="center"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+</body>
+</html>

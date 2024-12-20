@@ -1,0 +1,30 @@
+.box{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    float: right;
+}
+.box1{
+    background-image: url('../praktikumcss-main/images/burung1.png');
+    background-size: 100% 100%;
+}
+.box2{
+    background-image: url('../praktikumcss-main/images/burung2.png');
+    background-size: 100% 100%;
+}
+.box3{
+    background-image: url('../praktikumcss-main/images/burung3.png');
+    background-size: 100% 100%;
+}
+.box4{
+    background-image: url('../praktikumcss-main/images/burung4.png');
+    background-size: 100% 100%;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    height: 150px;
+    margin: 10px;
+}
